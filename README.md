@@ -1,2 +1,3 @@
 # MediaPlayer-ffmpeg
-在之前的MediaPlayer工程基础上由QMediaPlayer升级到ffmpeg来实现音视频播放
+
+在之前的MediaPlayer工程基础上采用ffmpeg+sdl替换QMediaPlayer来实现音视频播放
