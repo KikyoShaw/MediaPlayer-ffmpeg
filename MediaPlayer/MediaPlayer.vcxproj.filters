@@ -24,6 +24,9 @@
     <Filter Include="musicPlayer">
       <UniqueIdentifier>{cc0a92b8-6565-4665-9de6-5654c494b9e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ffplayer">
+      <UniqueIdentifier>{64298e5d-af50-4630-818d-ce7db4bb1637}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MediaPlayer.qrc">
@@ -85,6 +88,36 @@
     <ClCompile Include="src\musicPlayer\musicInfoWidget.cpp">
       <Filter>musicPlayer</Filter>
     </ClCompile>
+    <ClCompile Include="src\ffplayer\Cond.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\LogWriter.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\Mutex.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\PcmVolumeControl.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\types.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoFrame.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoPlayer_AudioThread.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoPlayer_VideoThread.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoPlayerEventHandle.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\ffplayer.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\customslider.h">
@@ -135,6 +168,9 @@
     <QtMoc Include="src\musicPlayer\musicInfoWidget.h">
       <Filter>musicPlayer</Filter>
     </QtMoc>
+    <QtMoc Include="src\ffplayer\ffplayer.h">
+      <Filter>ffplayer</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\mainwidget.ui">
@@ -174,6 +210,30 @@
   <ItemGroup>
     <ClInclude Include="src\gifProxyStyle.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\Cond.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\LogWriter.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\Mutex.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\PcmVolumeControl.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\types.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\VideoFrame.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\VideoPlayerEventHandle.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\ffplayerDefine.h">
+      <Filter>ffplayer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

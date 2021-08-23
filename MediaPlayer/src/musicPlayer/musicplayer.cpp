@@ -14,6 +14,8 @@
 #include <QJsonArray>
 #include <QNetworkReply>
 
+#include "ffPlayer.h"
+
 //设置循环按钮属性
 constexpr char* Property_id = "id";
 //播放顺序
@@ -35,6 +37,9 @@ MusicPlayer::MusicPlayer(QWidget *parent) :
 
 	//音乐播放模块
 	initMusicPlayer();
+
+	m_ffPlayer = new ffPlayer();
+	connect(m_ffPlayer, &ffPlayer::sigTotalTimeChanged, this, &MusicPlayer::sltDurationChanged);
 
 	connect(ui.pushButton_min, &QPushButton::clicked, this, &MusicPlayer::showMinimized);
 	connect(ui.pushButton_close, &QPushButton::clicked, this, &MusicPlayer::close);
@@ -194,7 +199,9 @@ void MusicPlayer::parseJsonSongInfo(const QString & json)
 					QString url = musicManager.getJsonData(valuedataObject, "play_url");
 					m_musicPlayList->addMedia(QUrl::fromLocalFile(url));
 					m_musicPlayList->setCurrentIndex(m_musicPlayList->mediaCount() - 1);
-					m_musicPlayer->play();
+					//m_musicPlayer->play();
+					m_ffPlayer->stop(true);
+					m_ffPlayer->startPlay(url.toStdString());
 					//音频名字显示
 					QString name = musicManager.getJsonData(valuedataObject, "audio_name");
 					ui.label_name->setText(name);
@@ -244,10 +251,12 @@ void MusicPlayer::sltMusicPlayOrPause()
 {
 	auto isPlay = ui.pushButton_play->isChecked();
 	if (isPlay) {
-		m_musicPlayer->play();
+		//m_musicPlayer->play();
+		m_ffPlayer->play();
 	}
 	else {
-		m_musicPlayer->pause();
+		//m_musicPlayer->pause();
+		m_ffPlayer->pause();
 	}
 }
 
@@ -316,7 +325,7 @@ void MusicPlayer::sltPlayListClicked(int row)
 	musicManager.getLoaclLrcData(path);
 }
 
-void MusicPlayer::sltDurationChanged(qint64 duration)
+void MusicPlayer::sltDurationChanged(int64_t duration)
 {
 	//设置进度条
 	ui.slider_progress->setMaximum(duration);
@@ -345,7 +354,8 @@ void MusicPlayer::sltSoundVoiceValue(int value)
 	else {
 		ui.pushButton_volum->setStyleSheet("border-image: url(:/musicPlayer/image/musicPlayer/shengyin.png);");
 	}
-	m_musicPlayer->setVolume(value);
+	//m_musicPlayer->setVolume(value);
+	m_ffPlayer->setVolume(value);
 }
 
 void MusicPlayer::sltShowVolumeSlider()

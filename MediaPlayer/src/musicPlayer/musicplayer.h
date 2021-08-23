@@ -11,6 +11,7 @@ class VSliderWidget;
 class LrcWidget;
 class QNetworkAccessManager;
 class QNetworkReply;
+class ffPlayer;
 
 class MusicPlayer : public QWidget
 {
@@ -37,7 +38,7 @@ private slots:
 	void sltPrevMusicPlay();
 	void sltOpenLocalMusicList();
 	void sltPlayListClicked(int row);
-	void sltDurationChanged(qint64 duration);
+	void sltDurationChanged(int64_t duration);
 	void sltPositionChanged(qint64 position);
 	void sltSoundVoiceValue(int value);
 	void sltShowVolumeSlider();
@@ -63,6 +64,8 @@ private:
 	//窗口移动属性值
 	QPoint m_point;
 	volatile bool m_bMove = false;
+	//ffmepg播放线程
+	ffPlayer *m_ffPlayer;
 	//播放器对象
 	QMediaPlayer *m_musicPlayer = nullptr;
 	//歌曲列表
@@ -79,6 +82,7 @@ private:
 	QNetworkAccessManager *m_netWorkMusicPlay = nullptr;
 	//下载请求
 	QNetworkAccessManager *m_netWorkDownLoad = nullptr;
+
 };
 
 #endif // MUSICPLAYER_H

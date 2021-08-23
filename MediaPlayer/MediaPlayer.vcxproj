@@ -61,20 +61,22 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)MediaPlayer\src;$(SolutionDir)MediaPlayer\src\musicPlayer;$(SolutionDir)MediaPlayer\thirdparty\ffmpeg\include;$(SolutionDir)MediaPlayer\thirdparty\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MediaPlayer\src;$(SolutionDir)MediaPlayer\src\ff;$(SolutionDir)MediaPlayer\src\musicPlayer;$(SolutionDir)MediaPlayer\thirdparty\ffmpeg\include;$(SolutionDir)MediaPlayer\thirdparty\SDL2\include;$(SolutionDir)MediaPlayer\src\ffplayer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)MediaPlayer\thirdparty\ffmpeg\lib\x86;$(SolutionDir)MediaPlayer\thirdparty\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)MediaPlayer\src;$(SolutionDir)MediaPlayer\src\musicPlayer;$(SolutionDir)MediaPlayer\thirdparty\ffmpeg\include;$(SolutionDir)MediaPlayer\thirdparty\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MediaPlayer\src;$(SolutionDir)MediaPlayer\src\ff;$(SolutionDir)MediaPlayer\src\musicPlayer;$(SolutionDir)MediaPlayer\thirdparty\ffmpeg\include;$(SolutionDir)MediaPlayer\thirdparty\SDL2\include;$(SolutionDir)MediaPlayer\src\ffplayer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)MediaPlayer\thirdparty\ffmpeg\lib\x86;$(SolutionDir)MediaPlayer\thirdparty\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
@@ -105,6 +107,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\customslider.cpp" />
+    <ClCompile Include="src\ffplayer\Cond.cpp" />
+    <ClCompile Include="src\ffplayer\LogWriter.cpp" />
+    <ClCompile Include="src\ffplayer\Mutex.cpp" />
+    <ClCompile Include="src\ffplayer\PcmVolumeControl.cpp" />
+    <ClCompile Include="src\ffplayer\types.cpp" />
+    <ClCompile Include="src\ffplayer\VideoFrame.cpp" />
+    <ClCompile Include="src\ffplayer\ffplayer.cpp" />
+    <ClCompile Include="src\ffplayer\VideoPlayerEventHandle.cpp" />
+    <ClCompile Include="src\ffplayer\VideoPlayer_AudioThread.cpp" />
+    <ClCompile Include="src\ffplayer\VideoPlayer_VideoThread.cpp" />
     <ClCompile Include="src\gifProxyStyle.cpp" />
     <ClCompile Include="src\mainwidget.cpp" />
     <ClCompile Include="src\MediaPlayer.cpp" />
@@ -162,6 +174,15 @@
     <QtMoc Include="src\vmarqueelabel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ffplayer\Cond.h" />
+    <ClInclude Include="src\ffplayer\ffplayerDefine.h" />
+    <ClInclude Include="src\ffplayer\LogWriter.h" />
+    <ClInclude Include="src\ffplayer\Mutex.h" />
+    <ClInclude Include="src\ffplayer\PcmVolumeControl.h" />
+    <ClInclude Include="src\ffplayer\types.h" />
+    <ClInclude Include="src\ffplayer\VideoFrame.h" />
+    <QtMoc Include="src\ffplayer\ffplayer.h" />
+    <ClInclude Include="src\ffplayer\VideoPlayerEventHandle.h" />
     <ClInclude Include="src\gifProxyStyle.h" />
     <QtMoc Include="src\musicPlayer\musicInfoWidget.h" />
     <QtMoc Include="src\musicPlayer\musicImage.h" />
