@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="musicPlayer">
+      <UniqueIdentifier>{cc0a92b8-6565-4665-9de6-5654c494b9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="videoPlayer">
+      <UniqueIdentifier>{9feb9c7d-e647-4e8d-8671-52169f71abb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{6a963636-a5b6-4242-8cef-11eebc1af4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ffplayer">
+      <UniqueIdentifier>{eb4f2f6d-0f46-4b8a-a2ba-97b8910a300b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MediaPlayer.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\usersql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\LrcWidget.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\musicInfoDelegate.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\musicInfoModel.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\musicManager.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\musicplayer.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\searchMusicView.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\musicImage.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\musicInfoWidget.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\videoPlayer\videoPlayer.cpp">
+      <Filter>videoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\videoPlayer\videoWidget.cpp">
+      <Filter>videoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\videoPlayer\videoControls.cpp">
+      <Filter>videoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\customslider.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\gifProxyStyle.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\vmarqueelabel.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\vsliderwidget.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\mvWidget.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\flowlayout.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\mvInfoModel.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\mvItemWidget.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\frameless.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\DragShadow.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\videoPlayer\videoControlTops.cpp">
+      <Filter>videoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\singerWidget.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\musicPlayer\singerItem.cpp">
+      <Filter>musicPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ThreadRequest.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ThreadManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\Cond.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\ffplayer.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\LogWriter.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\Mutex.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\PcmVolumeControl.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\types.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoFrame.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoPlayer_AudioThread.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoPlayer_VideoThread.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffplayer\VideoPlayerEventHandle.cpp">
+      <Filter>ffplayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\mainwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sql.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\usersql.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\LrcWidget.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\musicInfoDelegate.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\musicInfoModel.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\musicManager.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\musicplayer.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\searchMusicView.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\musicImage.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\musicInfoWidget.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\videoPlayer\videoPlayer.h">
+      <Filter>videoPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\videoPlayer\videoWidget.h">
+      <Filter>videoPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\customslider.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\vmarqueelabel.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\vsliderwidget.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\videoPlayer\videoControls.h">
+      <Filter>videoPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\mvWidget.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\mvInfoModel.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\mvItemWidget.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\frameless.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\DragShadow.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\videoPlayer\videoControlTops.h">
+      <Filter>videoPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\singerWidget.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\musicPlayer\singerItem.h">
+      <Filter>musicPlayer</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\ThreadRequest.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\ThreadManager.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ffplayer\ffplayer.h">
+      <Filter>ffplayer</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\mainwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\sql.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\usersql.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\LrcWidget.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\musicplayer.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\searchMusicView.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\musicInfoWidget.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\videoPlayer\videoPlayer.ui">
+      <Filter>videoPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\videoPlayer\videoWidget.ui">
+      <Filter>videoPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\common\vsliderwidget.ui">
+      <Filter>common</Filter>
+    </QtUic>
+    <QtUic Include="src\videoPlayer\videoControls.ui">
+      <Filter>videoPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\mvWidget.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\mvItemWidget.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\videoPlayer\videoControlTops.ui">
+      <Filter>videoPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\singerWidget.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+    <QtUic Include="src\musicPlayer\singerItem.ui">
+      <Filter>musicPlayer</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\gifProxyStyle.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\flowlayout.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\Cond.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\ffplayerDefine.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\LogWriter.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\Mutex.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\PcmVolumeControl.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\types.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\VideoFrame.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ffplayer\VideoPlayerEventHandle.h">
+      <Filter>ffplayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
