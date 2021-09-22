@@ -1,4 +1,5 @@
-﻿#pragma once
+﻿#ifndef FFPLAYER_H
+#define FFPLAYER_H
 
 #include <QObject>
 #include "ffplayerDefine.h"
@@ -168,3 +169,5 @@ private:
     void doDisplayVideo(const uint8_t *yuv420Buffer, const int &width, const int &height);
 
 };
+
+#endif

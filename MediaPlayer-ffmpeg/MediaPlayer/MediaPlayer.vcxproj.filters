@@ -160,6 +160,9 @@
     <ClCompile Include="src\ffplayer\VideoPlayerEventHandle.cpp">
       <Filter>ffplayer</Filter>
     </ClCompile>
+    <ClCompile Include="src\common\AppConfig.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\mainwidget.h">
@@ -327,6 +330,9 @@
     </ClInclude>
     <ClInclude Include="src\ffplayer\VideoPlayerEventHandle.h">
       <Filter>ffplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\AppConfig.h">
+      <Filter>common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

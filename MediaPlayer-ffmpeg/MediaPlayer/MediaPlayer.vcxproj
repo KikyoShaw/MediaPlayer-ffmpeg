@@ -106,6 +106,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\common\AppConfig.cpp" />
     <ClCompile Include="src\common\customslider.cpp" />
     <ClCompile Include="src\common\DragShadow.cpp" />
     <ClCompile Include="src\common\flowlayout.cpp" />
@@ -176,6 +177,7 @@
     <QtMoc Include="src\usersql.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\common\AppConfig.h" />
     <ClInclude Include="src\ffplayer\Cond.h" />
     <ClInclude Include="src\ffplayer\ffplayerDefine.h" />
     <ClInclude Include="src\ffplayer\LogWriter.h" />
